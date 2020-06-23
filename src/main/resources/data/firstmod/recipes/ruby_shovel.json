@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " x ",
+    " y ",
+    " y "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "firstmod:ruby"
+    },
+    "y":{
+      "item": "firstmod:stone_stick"
+    }
+  },
+  "result":
+  {
+    "item": "firstmod:ruby_shovel",
+    "count": 1
+  }
+}

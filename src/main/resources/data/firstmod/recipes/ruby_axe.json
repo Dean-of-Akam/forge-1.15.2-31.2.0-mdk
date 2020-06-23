@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "xx ",
+    "xy ",
+    " y "
+  ],
+  "key":
+  {
+    "x":
+    {
+      "item": "firstmod:ruby"
+    },
+    "y":{
+      "item": "firstmod:stone_stick"
+    }
+  },
+  "result":
+  {
+    "item": "firstmod:ruby_axe",
+    "count": 1
+  }
+}

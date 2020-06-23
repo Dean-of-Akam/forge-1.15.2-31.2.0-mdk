@@ -1,0 +1,24 @@
+{
+
+  "item.firstmod.ruby": "紫晶石",
+  "item.firstmod.ruby_staff": "紫晶石法杖",
+  "item.firstmod.ruby_apple": "紫晶石苹果",
+
+  "item.firstmod.ruby_pickaxe": "紫晶石镐",
+  "item.firstmod.ruby_axe": "紫晶石斧",
+  "item.firstmod.ruby_sword": "紫晶石剑",
+  "item.firstmod.ruby_hoe": "紫晶石锄",
+  "item.firstmod.ruby_shovel": "紫晶石铲",
+
+  "item.firstmod.ruby_helmet": "紫晶石头盔",
+  "item.firstmod.ruby_chestplate": "紫晶石胸甲",
+  "item.firstmod.ruby_leggings": "紫晶石护腿",
+  "item.firstmod.ruby_boots": "紫晶石靴",
+
+  "item.firstmod.stone_stick": "石棍",
+  "block.firstmod.ruby_ore": "紫晶石矿",
+  "block.firstmod.ruby_block": "紫晶石块",
+  "block.firstmod.specal_block": "转椅",
+  "itemGroup.First": "练手"
+
+}
