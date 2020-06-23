@@ -26,7 +26,7 @@ public class BlockInit {
     public static void registerBlocks(final RegistryEvent.Register<Block> event){
         event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(1.5f, 1.0f).harvestTool(ToolType.PICKAXE).harvestLevel(1).sound(SoundType.METAL)).setRegistryName("ruby_ore"));
         event.getRegistry().register(new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(1.5f, 1.0f).harvestTool(ToolType.PICKAXE).harvestLevel(0).sound(SoundType.METAL)).setRegistryName("ruby_block"));
-        event.getRegistry().register(new SpecalBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f,10.0f).harvestLevel(0).sound(SoundType.ANVIL).lightValue(4).slipperiness(1.2f).speedFactor(0.7f).noDrops()).setRegistryName("specal_block"));
+        event.getRegistry().register(new SpecalBlock(Block.Properties.create(Material.IRON).hardnessAndResistance(0.2f,10.0f).harvestLevel(0).sound(SoundType.ANVIL).lightValue(4).slipperiness(1.2f).speedFactor(0.7f).noDrops()).setRegistryName("specal_block"));
     }
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event){
