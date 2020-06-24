@@ -98,4 +98,9 @@ public class RubyStaffItem extends SwordItem {
         world.addLightningBolt(lightningBoltEntity);
         super.onCreated(stack, worldIn, playerIn);
     }
+
+    @Override
+    public int getBurnTime(ItemStack itemStack) {
+        return 600;
+    }
 }

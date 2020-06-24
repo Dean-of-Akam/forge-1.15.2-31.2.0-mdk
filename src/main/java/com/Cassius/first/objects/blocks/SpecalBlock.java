@@ -96,4 +96,5 @@ public class SpecalBlock extends Block {
         item.addEnchantment(Enchantments.FORTUNE,10);
         super.onBlockHarvested(worldIn, pos, state, player);
     }
+
 }

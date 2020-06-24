@@ -2,6 +2,7 @@ package com.Cassius.first;
 
 
 import com.Cassius.first.init.BlockInit;
+import com.Cassius.first.init.ModTileEntityTypes;
 import com.Cassius.first.world.FirstOreGen;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -34,6 +35,7 @@ public class FirstMod
         modEventsBus.addListener(this::setup);
 
         modEventsBus.addListener(this::doClientStuff);
+        ModTileEntityTypes.TILE_ENTITY_TYPEs.register(modEventsBus);
 
         instance = this;
 
