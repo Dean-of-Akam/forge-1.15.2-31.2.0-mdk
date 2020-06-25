@@ -3,7 +3,7 @@ package com.Cassius.first.init;
 import com.Cassius.first.FirstMod;
 import com.Cassius.first.objects.blocks.ModPressurePlateBlock;
 import com.Cassius.first.objects.blocks.ModWoodButtonBLock;
-import com.Cassius.first.objects.blocks.SpecalBlock;
+
 
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
