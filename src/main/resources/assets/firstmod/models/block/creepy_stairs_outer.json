@@ -1,0 +1,8 @@
+{
+    "parent": "block/outer_stairs",
+    "textures": {
+        "bottom": "firstmod:blocks/ruby_block",
+        "top": "firstmod:blocks/ruby_block",
+        "side": "firstmod:blocks/ruby_block"
+    }
+}

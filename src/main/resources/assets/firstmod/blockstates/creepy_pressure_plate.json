@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "powered=false": { "model": "firstmod:block/creepy_pressure_plate" },
+    "powered=true": { "model": "firstmod:block/creepy_pressure_plate_down" }
+  }
+}

@@ -21,6 +21,11 @@
   "block.firstmod.ruby_block": "Ruby Block",
   "block.firstmod.specal_block": "Rotate Chair",
   "block.firstmod.quarry_block": "Quarry Block",
+  "block.firstmod.creepy_stairs": "Creepy Stairs",
+  "block.firstmod.creepy_button": "Creepy Button",
+  "block.firstmod.creepy_fence": "Creepy Fence",
+  "block.firstmod.creepy_pressure_plate": "Creepy Pressure Plate",
+
   "itemGroup.First": "First Tab"
 
 }
