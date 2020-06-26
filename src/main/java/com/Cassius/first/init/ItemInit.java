@@ -50,7 +50,7 @@ public class ItemInit {
         event.getRegistry().register(new Item(new Item.Properties().group(FirstMod.FirstItemGroup.instance)).setRegistryName("ruby"));
         event.getRegistry().register(new Item(new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("stone_stick"));
         event.getRegistry().register(new Item(new Item.Properties().group(FirstMod.FirstItemGroup.instance).food(new Food.Builder().hunger(6).saturation(1.2f).effect(new EffectInstance(Effects.ABSORPTION, 6000, 5) , 1.0f).effect(new EffectInstance(Effects.FIRE_RESISTANCE, 6000, 5), 1.0f).build())).setRegistryName("ruby_apple"));
-        event.getRegistry().register(new RubyStaffItem(ModItemTier.RUBY,1,15.0f, new Item.Properties().group(FirstMod.FirstItemGroup.instance)).setRegistryName("ruby_staff"));
+        event.getRegistry().register(new RubyStaffItem(ModItemTier.RUBY,-15,15.0f, new Item.Properties().group(FirstMod.FirstItemGroup.instance)).setRegistryName("ruby_staff"));
 
         //Tools
         event.getRegistry().register(new SwordItem(ModItemTier.RUBY, 1000, 15.0f, new Item.Properties().group(FirstMod.FirstItemGroup.instance)).setRegistryName("ruby_sword"));
