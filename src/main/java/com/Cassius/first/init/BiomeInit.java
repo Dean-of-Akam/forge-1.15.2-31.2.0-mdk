@@ -21,6 +21,7 @@ public class BiomeInit {
         registerBiome(RUBY_BIOME.get(), BiomeDictionary.Type.PLAINS, BiomeDictionary.Type.OVERWORLD);
     }
     private static void registerBiome(Biome biome , BiomeDictionary.Type... types){
+        BiomeManager.addBiome(BiomeManager.BiomeType.COOL, new BiomeManager.BiomeEntry(biome, 100));//在世界范围内生成
         BiomeDictionary.addTypes(biome, types);
         BiomeManager.addSpawnBiome(biome);
     }
