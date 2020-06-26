@@ -14,7 +14,6 @@ import net.minecraft.world.gen.placement.*;
 public class RubyBiome extends Biome {
     public RubyBiome(Builder biomeBuilder) {
         super(biomeBuilder);
-        this.addStructure(Feature.VILLAGE.withConfiguration(new VillageConfig()));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.SPIDER, 100, 4, 10));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ZOMBIE, 95, 4, 10));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ZOMBIE_VILLAGER, 5, 4, 10));
