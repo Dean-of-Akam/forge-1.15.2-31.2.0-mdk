@@ -7,6 +7,7 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -34,6 +35,7 @@ public class FirstMod
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "firstmod";
     public static FirstMod instance;
+    public static final ResourceLocation RUBY_DIM_TYPE = new ResourceLocation(MOD_ID,"ruby");
 
     public FirstMod() {
         final IEventBus modEventsBus = FMLJavaModLoadingContext.get().getModEventBus();
@@ -44,6 +46,7 @@ public class FirstMod
         BlockInitNew.BLOCKS.register(modEventsBus);
         ModTileEntityTypes.TILE_ENTITY_TYPEs.register(modEventsBus);
         BiomeInit.BIOMES.register(modEventsBus);
+        DimensionInit.MOD_DIMENSIONS.register(modEventsBus);
 
         instance = this;
 
