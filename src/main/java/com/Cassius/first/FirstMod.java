@@ -1,16 +1,13 @@
 package com.Cassius.first;
 
 
-import com.Cassius.first.init.BlockInit;
-import com.Cassius.first.init.BlockInitNew;
-import com.Cassius.first.init.ItemInitNew;
-import com.Cassius.first.init.ModTileEntityTypes;
-import com.Cassius.first.world.FirstOreGen;
-import net.minecraft.block.Block;
+import com.Cassius.first.init.*;
+import com.Cassius.first.world.gen.FirstOreGen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
+import net.minecraft.world.biome.Biome;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -23,7 +20,6 @@ import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.event.server.FMLServerStartingEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.IForgeRegistry;
-import net.minecraftforge.registries.IForgeRegistryEntry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -47,6 +43,7 @@ public class FirstMod
         ItemInitNew.ITEMS.register(modEventsBus);
         BlockInitNew.BLOCKS.register(modEventsBus);
         ModTileEntityTypes.TILE_ENTITY_TYPEs.register(modEventsBus);
+        BiomeInit.BIOMES.register(modEventsBus);
 
         instance = this;
 
@@ -63,6 +60,10 @@ public class FirstMod
         });
 
         LOGGER.debug("Registerd Items!");
+    }
+    @SubscribeEvent
+    public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event){
+        BiomeInit.registerBiomes();
     }
 
     private void setup(final FMLCommonSetupEvent event)

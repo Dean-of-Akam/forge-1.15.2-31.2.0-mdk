@@ -1,4 +1,4 @@
-package com.Cassius.first.world;
+package com.Cassius.first.world.gen;
 
 import com.Cassius.first.init.BlockInit;
 import net.minecraft.world.biome.Biome;
