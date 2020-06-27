@@ -20,8 +20,12 @@
   "block.firstmod.ruby_block": "紫晶石块",
   "block.firstmod.specal_block": "转椅",
   "block.firstmod.quarry_block": "Quarry Block",
+  "block.firstmod.ruby_chest": "紫晶石箱",
+
   "itemGroup.First": "练手",
-  "biome.firstmod.ruby_biome": "紫晶石山地"
+  "biome.firstmod.ruby_biome": "紫晶石山地",
+  "container.ruby_chest": "紫晶石箱"
+
 
 
 }

@@ -23,8 +23,6 @@ public class TestJumpEvent {
         playerEntity.addPotionEffect(new EffectInstance(Effects.REGENERATION, 6000, 5));
         playerEntity.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 6000, 5));
         playerEntity.addPotionEffect(new EffectInstance(Effects.ABSORPTION, 6000, 5));
-
-
-
     }
+
 }

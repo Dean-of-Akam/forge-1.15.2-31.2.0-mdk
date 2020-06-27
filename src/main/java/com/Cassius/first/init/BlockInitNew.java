@@ -5,6 +5,7 @@ import com.Cassius.first.objects.blocks.ModPressurePlateBlock;
 import com.Cassius.first.objects.blocks.ModWoodButtonBLock;
 
 
+import com.Cassius.first.objects.blocks.RubyChestBlock;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -21,4 +22,6 @@ public class BlockInitNew {
     public static final RegistryObject<Block> CREEPY_FENCE = BLOCKS.register("creepy_fence",() -> new FenceBlock(Block.Properties.create(Material.WOOD, MaterialColor.PURPLE_TERRACOTTA)));
     public static final RegistryObject<Block> CREEPY_BUTTON = BLOCKS.register("creepy_button",() -> new ModWoodButtonBLock(Block.Properties.create(Material.WOOD,MaterialColor.PURPLE_TERRACOTTA)));
     public static final RegistryObject<Block> CREEPY_PRESSUREPLATE = BLOCKS.register("creepy_pressure_plate",() -> new ModPressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,Block.Properties.create(Material.WOOD, MaterialColor.PURPLE_TERRACOTTA)));
+
+    public static final RegistryObject<Block> RUBY_CHEST = BLOCKS.register("ruby_chest",() -> new RubyChestBlock(Block.Properties.from(BlockInitNew.DEF_BlOCK.get())));
 }

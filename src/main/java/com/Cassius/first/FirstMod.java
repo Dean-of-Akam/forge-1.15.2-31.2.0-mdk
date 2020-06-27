@@ -44,7 +44,8 @@ public class FirstMod
         modEventsBus.addListener(this::doClientStuff);
         ItemInitNew.ITEMS.register(modEventsBus);
         BlockInitNew.BLOCKS.register(modEventsBus);
-        ModTileEntityTypes.TILE_ENTITY_TYPEs.register(modEventsBus);
+        ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventsBus);
+        ModContainerType.CONTAINER_TYPES.register(modEventsBus);
         BiomeInit.BIOMES.register(modEventsBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventsBus);
 

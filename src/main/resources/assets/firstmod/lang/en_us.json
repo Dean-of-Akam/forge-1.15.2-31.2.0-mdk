@@ -25,8 +25,10 @@
   "block.firstmod.creepy_button": "Creepy Button",
   "block.firstmod.creepy_fence": "Creepy Fence",
   "block.firstmod.creepy_pressure_plate": "Creepy Pressure Plate",
+  "block.firstmod.ruby_chest": "Ruby Chest",
 
   "itemGroup.First": "First Tab",
-  "biome.firstmod.ruby_biome": "Ruby biome"
+  "biome.firstmod.ruby_biome": "Ruby biome",
+  "container.ruby_chest": "Ruby Chest"
 
 }
