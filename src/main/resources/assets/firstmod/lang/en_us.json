@@ -17,6 +17,10 @@
   "item.firstmod.ruby_apple": "Ruby Apple",
 
 
+  "block.firstmod.ruby_log": "Ruby Log",
+  "block.firstmod.ruby_planks": "Ruby Planks",
+  "block.firstmod.ruby_leaves": "Ruby Leaves",
+  "block.firstmod.ruby_sapling": "Ruby Sapling",
   "block.firstmod.ruby_ore": "Ruby Ore",
   "block.firstmod.ruby_block": "Ruby Block",
   "block.firstmod.specal_block": "Rotate Chair",

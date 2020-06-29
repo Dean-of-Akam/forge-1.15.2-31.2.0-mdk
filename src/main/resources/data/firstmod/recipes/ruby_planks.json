@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "firstmod:ruby_log"
+    }
+  ],
+  "result":
+  {
+    "item": "firstmod:ruby_planks",
+    "count": 4
+  }
+}

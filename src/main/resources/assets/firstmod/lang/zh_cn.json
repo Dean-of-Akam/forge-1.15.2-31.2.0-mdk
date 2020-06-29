@@ -16,6 +16,11 @@
   "item.firstmod.ruby_boots": "紫晶石靴",
 
   "item.firstmod.stone_stick": "石棍",
+
+  "block.firstmod.ruby_log": "紫晶原木",
+  "block.firstmod.ruby_planks": "紫晶木板",
+  "block.firstmod.ruby_leaves": "紫晶树叶",
+  "block.firstmod.ruby_sapling": "紫晶树苗",
   "block.firstmod.ruby_ore": "紫晶石矿",
   "block.firstmod.ruby_block": "紫晶石块",
   "block.firstmod.specal_block": "转椅",
