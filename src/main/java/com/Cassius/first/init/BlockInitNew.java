@@ -7,6 +7,7 @@ import com.Cassius.first.objects.blocks.ModWoodButtonBLock;
 
 import com.Cassius.first.objects.blocks.RubyChestBlock;
 import com.Cassius.first.objects.blocks.RubySapling;
+import com.Cassius.first.world.feature.RubyTree;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.material.MaterialColor;
@@ -29,6 +30,6 @@ public class BlockInitNew {
     public static final RegistryObject<Block> RUBY_LOG = BLOCKS.register("ruby_log", () -> new LogBlock(MaterialColor.WOOD, Block.Properties.from(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> RUBY_PLANKS = BLOCKS.register("ruby_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> RUBY_LEAVES = BLOCKS.register("ruby_leaves",() -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
-    public static final RegistryObject<Block> RUBY_SAPLING = BLOCKS.register("ruby_sapling", () -> new RubySapling(null, Block.Properties.from(Blocks.OAK_LEAVES)));
+    public static final RegistryObject<Block> RUBY_SAPLING = BLOCKS.register("ruby_sapling", () -> new RubySapling(() -> new RubyTree(), Block.Properties.from(Blocks.OAK_LEAVES)));
 
 }
