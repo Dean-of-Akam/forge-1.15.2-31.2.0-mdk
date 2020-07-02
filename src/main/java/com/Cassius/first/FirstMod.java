@@ -48,6 +48,7 @@ public class FirstMod
         ModContainerType.CONTAINER_TYPES.register(modEventsBus);
         BiomeInit.BIOMES.register(modEventsBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventsBus);
+        ModEntityTypes.ENTITY_TYPES.register(modEventsBus);
 
         instance = this;
 
