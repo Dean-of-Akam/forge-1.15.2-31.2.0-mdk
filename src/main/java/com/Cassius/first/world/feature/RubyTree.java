@@ -15,7 +15,7 @@ import java.util.Random;
 
 public class RubyTree extends Tree {
 
-    public static final TreeFeatureConfig RUBY_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(BlockInitNew.RUBY_LOG.get().getDefaultState()), new SimpleBlockStateProvider(BlockInitNew.RUBY_LEAVES.get().getDefaultState()), new BlobFoliagePlacer(3, 0))).baseHeight(13).heightRandA(5).foliageHeight(9).ignoreVines().setSapling((IPlantable) BlockInitNew.RUBY_SAPLING.get()).build();
+    public static final TreeFeatureConfig RUBY_TREE_CONFIG = (new TreeFeatureConfig.Builder(new SimpleBlockStateProvider(BlockInitNew.RUBY_LOG.get().getDefaultState()), new SimpleBlockStateProvider(BlockInitNew.RUBY_LEAVES.get().getDefaultState()), new BlobFoliagePlacer(2, 0))).baseHeight(5).heightRandA(2).foliageHeight(3).ignoreVines().setSapling((IPlantable) BlockInitNew.RUBY_SAPLING.get()).build();
 
 
     @Nullable
