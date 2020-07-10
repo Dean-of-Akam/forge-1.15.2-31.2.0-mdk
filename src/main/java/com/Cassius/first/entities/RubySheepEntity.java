@@ -2,6 +2,7 @@ package com.Cassius.first.entities;
 
 import com.Cassius.first.init.ItemInit;
 import com.Cassius.first.init.ModEntityTypes;
+import com.Cassius.first.init.SoundInit;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.effect.LightningBoltEntity;
@@ -9,6 +10,7 @@ import net.minecraft.entity.passive.AnimalEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.util.SoundEvent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
@@ -107,4 +109,9 @@ public class RubySheepEntity extends AnimalEntity {
         this.setGlowing(true);
     }
 
+    @Nullable
+    @Override
+    protected SoundEvent getAmbientSound() {
+        return SoundInit.AMBIENT.get();
+    }
 }

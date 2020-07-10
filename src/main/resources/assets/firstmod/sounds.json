@@ -1,0 +1,17 @@
+{
+    "entity.ruby_sheep_entity.ambient": {
+      "category": "entity",
+      "subtitle": "entity.ruby_sheep_entity.ambient",
+      "sounds": [
+        {
+          "name": "firstmod:entity/entity.ruby_sheep_entity.ambient",
+          "stream": "true"
+        },
+        {
+          "name": "firstmod:entity/entity.ruby_sheep_entity.ambient1",
+          "stream": "true"
+        }
+
+      ]
+    }
+}

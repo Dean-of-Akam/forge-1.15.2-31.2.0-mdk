@@ -1,5 +1,6 @@
 package com.Cassius.first.world.biomes;
 
+import com.Cassius.first.init.ModEntityTypes;
 import com.Cassius.first.world.feature.RubyTree;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.entity.EntityClassification;
@@ -29,7 +30,6 @@ public class RubyBiome extends Biome {
 
 
 
-
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.SPIDER, 900, 4, 10));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ZOMBIE, 900, 4, 10));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ZOMBIE_VILLAGER, 900, 4, 10));
@@ -38,6 +38,7 @@ public class RubyBiome extends Biome {
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.SLIME, 900, 4, 10));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.ENDERMAN, 650, 1, 4));
         this.addSpawn(EntityClassification.MONSTER, new SpawnListEntry(EntityType.WITCH, 650, 1, 1));
+
 
 
         this.addCarver(GenerationStage.Carving.AIR,Biome.createCarver(WorldCarver.CAVE,new ProbabilityConfig(0.14285715f)));

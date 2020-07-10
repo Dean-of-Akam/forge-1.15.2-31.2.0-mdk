@@ -42,6 +42,7 @@ public class FirstMod
         modEventsBus.addListener(this::setup);
 
         modEventsBus.addListener(this::doClientStuff);
+
         ItemInitNew.ITEMS.register(modEventsBus);
         BlockInitNew.BLOCKS.register(modEventsBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventsBus);
@@ -49,7 +50,7 @@ public class FirstMod
         BiomeInit.BIOMES.register(modEventsBus);
         DimensionInit.MOD_DIMENSIONS.register(modEventsBus);
         ModEntityTypes.ENTITY_TYPES.register(modEventsBus);
-
+        SoundInit.SOUNDS.register(modEventsBus);
         instance = this;
 
         MinecraftForge.EVENT_BUS.register(this);
