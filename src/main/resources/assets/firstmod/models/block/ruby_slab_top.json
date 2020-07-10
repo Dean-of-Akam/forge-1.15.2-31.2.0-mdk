@@ -1,0 +1,8 @@
+{
+  "parent": "block/slab_top",
+  "textures": {
+    "bottom": "firstmod:blocks/ruby_planks",
+    "top": "firstmod:blocks/ruby_planks",
+    "side": "firstmod:blocks/ruby_planks"
+  }
+}

@@ -29,7 +29,11 @@
 
   "itemGroup.First": "练手",
   "biome.firstmod.ruby_biome": "紫晶石山地",
-  "container.ruby_chest": "紫晶石箱"
+  "container.ruby_chest": "紫晶石箱",
+
+  "entity.firstmod.ruby_sheep": "馔羊",
+  "block.firstmod.ruby_slab": "紫晶木台阶",
+  "entity.ruby_sheep_entity.ambient": "虎啸"
 
 
 

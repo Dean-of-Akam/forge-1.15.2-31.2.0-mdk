@@ -33,6 +33,10 @@
 
   "itemGroup.First": "First Tab",
   "biome.firstmod.ruby_biome": "Ruby biome",
-  "container.ruby_chest": "Ruby Chest"
+  "container.ruby_chest": "Ruby Chest",
+
+  "entity.firstmod.ruby_sheep": "Gem Sheep",
+  "block.firstmod.ruby_slab": "Ruby Slab",
+  "entity.ruby_sheep_entity.ambient": "Tiger"
 
 }

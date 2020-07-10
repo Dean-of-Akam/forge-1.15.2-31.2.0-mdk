@@ -81,13 +81,7 @@ public class RubyStaffItem extends SwordItem {
 
         return super.hitEntity(stack, target, attacker);
     }
-
-    @Override
-    public boolean onEntityItemUpdate(ItemStack stack, ItemEntity entity) {
-        World world = entity.getEntityWorld();
-        world.setBlockState(entity.getPosition().down(), BlockInit.ruby_block.getDefaultState());
-        return false;
-    }
+    
 
     @Override
     public void onCreated(ItemStack stack, World worldIn, PlayerEntity playerIn) {

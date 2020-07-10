@@ -2,6 +2,7 @@ package com.Cassius.first;
 
 
 import com.Cassius.first.init.*;
+import com.Cassius.first.objects.blocks.RubyCrop;
 import com.Cassius.first.world.gen.FirstOreGen;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -58,7 +59,7 @@ public class FirstMod
     @SubscribeEvent
     public static void onRegisterItems(final RegistryEvent.Register<Item> event){
         final IForgeRegistry<Item> registry = event.getRegistry();
-        BlockInitNew.BLOCKS.getEntries().stream().map(RegistryObject::get).forEach(block -> {
+        BlockInitNew.BLOCKS.getEntries().stream().filter(block -> !(block.get() instanceof RubyCrop)).map(RegistryObject::get).forEach(block -> {
             final Item.Properties properties = new Item.Properties().group(FirstItemGroup.instance);
             final BlockItem blockItem = new BlockItem(block,properties);
             blockItem.setRegistryName(block.getRegistryName());

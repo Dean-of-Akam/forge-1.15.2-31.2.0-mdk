@@ -21,6 +21,7 @@ public class ClientEventBusSubscriber {
     public static void clientSetUp(FMLClientSetupEvent event){
         ScreenManager.registerFactory(ModContainerType.RUBY_CHEST.get(), RubyChestScreen::new);
         RenderTypeLookup.setRenderLayer(BlockInitNew.RUBY_SAPLING.get(),RenderType.getCutout());
+        RenderTypeLookup.setRenderLayer(BlockInitNew.RUBY_CROP.get(), RenderType.getCutout());
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.RUBY_SHEEP_ENTITY.get(), EntityRender::new);
     }
 }

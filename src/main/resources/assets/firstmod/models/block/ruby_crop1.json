@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "firstmod:blocks/ruby_crop_stage1"
+  }
+}

@@ -1,12 +1,9 @@
 package com.Cassius.first.init;
 
 import com.Cassius.first.FirstMod;
-import com.Cassius.first.objects.blocks.ModPressurePlateBlock;
-import com.Cassius.first.objects.blocks.ModWoodButtonBLock;
+import com.Cassius.first.objects.blocks.*;
 
 
-import com.Cassius.first.objects.blocks.RubyChestBlock;
-import com.Cassius.first.objects.blocks.RubySapling;
 import com.Cassius.first.world.feature.RubyTree;
 import net.minecraft.block.*;
 import net.minecraft.block.material.Material;
@@ -31,5 +28,6 @@ public class BlockInitNew {
     public static final RegistryObject<Block> RUBY_PLANKS = BLOCKS.register("ruby_planks", () -> new Block(Block.Properties.from(Blocks.OAK_PLANKS)));
     public static final RegistryObject<Block> RUBY_LEAVES = BLOCKS.register("ruby_leaves",() -> new LeavesBlock(Block.Properties.from(Blocks.OAK_LEAVES)));
     public static final RegistryObject<Block> RUBY_SAPLING = BLOCKS.register("ruby_sapling", () -> new RubySapling(() -> new RubyTree(), Block.Properties.from(Blocks.OAK_LEAVES)));
-
+    public static final RegistryObject<Block> RUBY_SLAB = BLOCKS.register("ruby_slab", () -> new SlabBlock(Block.Properties.from(BlockInitNew.RUBY_PLANKS.get())));
+    public static final RegistryObject<Block> RUBY_CROP = BLOCKS.register("ruby_crop", () -> new RubyCrop(Block.Properties.from(Blocks.WHEAT)));
 }
