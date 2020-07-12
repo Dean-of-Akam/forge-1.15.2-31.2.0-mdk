@@ -27,7 +27,8 @@ import java.util.List;
 
 public class RubyStaffItem extends SwordItem {
 
-
+    private boolean hasCapture = false;
+    private LivingEntity Captured_entity;
     public RubyStaffItem(IItemTier tier, int attackDamageIn, float attackSpeedIn, Properties builder) {
         super(tier, attackDamageIn, attackSpeedIn, builder);
     }
@@ -48,7 +49,8 @@ public class RubyStaffItem extends SwordItem {
         super.addInformation(stack, worldIn, tooltip, flagIn);
     }
 
-    @Override
+
+        @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         playerIn.addPotionEffect(new EffectInstance(Effects.RESISTANCE, 600, 10));
         playerIn.addPotionEffect(new EffectInstance(Effects.FIRE_RESISTANCE, 600, 10));
@@ -96,5 +98,12 @@ public class RubyStaffItem extends SwordItem {
     @Override
     public int getBurnTime(ItemStack itemStack) {
         return 600;
+    }
+
+    @Override
+    public boolean itemInteractionForEntity(ItemStack stack, PlayerEntity playerIn, LivingEntity target, Hand hand) {
+        if (target.world.isRemote) return false;
+        target.setPosition(playerIn.getPosX(),0,playerIn.getPosZ());
+        return super.itemInteractionForEntity(stack, playerIn, target, hand);
     }
 }

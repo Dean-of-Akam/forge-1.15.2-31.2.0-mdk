@@ -1,20 +1,30 @@
 package com.Cassius.first;
 
 
+import com.Cassius.first.entities.BallEntity;
 import com.Cassius.first.init.*;
 import com.Cassius.first.objects.blocks.RubyCrop;
 import com.Cassius.first.world.gen.FirstOreGen;
+import net.minecraft.block.DispenserBlock;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.renderer.entity.SpriteRenderer;
+import net.minecraft.dispenser.IPosition;
+import net.minecraft.dispenser.ProjectileDispenseBehavior;
+import net.minecraft.entity.IProjectile;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
+import net.minecraft.world.World;
 import net.minecraft.world.biome.Biome;
+import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
@@ -25,7 +35,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-
+import javax.annotation.Nonnull;
 
 
 @Mod("firstmod")
@@ -45,6 +55,7 @@ public class FirstMod
         modEventsBus.addListener(this::doClientStuff);
 
         ItemInitNew.ITEMS.register(modEventsBus);
+        ItemTileInit.EDR.register(modEventsBus);
         BlockInitNew.BLOCKS.register(modEventsBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventsBus);
         ModContainerType.CONTAINER_TYPES.register(modEventsBus);
@@ -66,12 +77,30 @@ public class FirstMod
             registry.register(blockItem);
         });
 
-        LOGGER.debug("Registerd Items!");
+        LOGGER.debug("Registered Items!");
     }
     @SubscribeEvent
     public static void onRegisterBiomes(final RegistryEvent.Register<Biome> event){
         BiomeInit.registerBiomes();
     }
+
+
+    @SubscribeEvent
+    public static void onRegisterItemEntity(final FMLCommonSetupEvent event){
+        RenderingRegistry.registerEntityRenderingHandler(ItemTileInit.MOB_BALL.get(), render -> new SpriteRenderer<>(render, Minecraft.getInstance().getItemRenderer()));
+        DispenserBlock.registerDispenseBehavior(ItemInitNew.MOB_BALL.get(), new ProjectileDispenseBehavior() {
+            @Nonnull
+            @Override
+            protected IProjectile getProjectileEntity(@Nonnull World worldIn,@Nonnull IPosition position,@Nonnull ItemStack stackIn) {
+                ItemStack newStack = stackIn.copy();
+                newStack.setCount(1);
+                return new BallEntity(position.getX(), position.getY(), position.getZ(), worldIn, newStack);
+            }
+        });
+    }
+
+
+
 
     private void setup(final FMLCommonSetupEvent event)
     {
